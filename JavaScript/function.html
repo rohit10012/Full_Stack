@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> body{
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <script>
+     
+     function checkIfICanDrive(){
+        drinking_habit = ""
+        age = prompt("Please enter your age");
+        if(age >= 18)
+            drinking_habit = prompt("Do you drink ?").toUpperCase();
+        else{
+            console.log("You can't drive");
+            exit(0);
+        }
+        //drinking_habit = drinking_habit
+        if(drinking_habit == "NO" || drinking_habit == "YES"){
+            if(age >= 18 && (drinking_habit == 'NO' || drinking_habit != "YES") ){
+            console.log("You can drive!!");
+        }
+        else
+        console.log("You can't drive");
+        }
+        else
+        console.log("Please enter the correct string!!");
+     }
+
+//main
+     checkIfICanDrive();
+
+    </script>
+</body>
+</html>
